@@ -141,7 +141,8 @@ export default function Hero() {
             </motion.button>
             <motion.a
               href="/Shivanshu_Resume_Final.pdf"
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               style={{
