@@ -176,8 +176,8 @@ export default function Hero() {
             style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}
           >
             {[
-              { icon: <GitFork size={18} />, href: 'https://github.com', label: 'GitHub' },
-              { icon: <Link2 size={18} />, href: 'https://linkedin.com', label: 'LinkedIn' },
+              { icon: <GitFork size={18} />, href: 'https://github.com/rajshiv-24', label: 'GitHub' },
+              { icon: <Link2 size={18} />, href: 'https://www.linkedin.com/in/rajshivan/', label: 'LinkedIn' },
               { icon: <Mail size={18} />, href: 'mailto:rajputshivanshu589@gmail.com', label: 'Email' },
             ].map((s) => (
               <motion.a
