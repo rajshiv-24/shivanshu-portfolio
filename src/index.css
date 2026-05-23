@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #070710;
+  color: #e8e6f0;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #070710; }
+::-webkit-scrollbar-thumb { background: #7c6ef5; border-radius: 2px; }
+
+.font-syne { font-family: 'Syne', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+.glass {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(124,110,245,0.12);
+}
+
+.glass-hover:hover {
+  background: rgba(124,110,245,0.06);
+  border-color: rgba(124,110,245,0.3);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #7c6ef5 0%, #5dcaa5 50%, #f0997b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-purple { box-shadow: 0 0 40px rgba(124,110,245,0.15); }
+.glow-teal { box-shadow: 0 0 40px rgba(93,202,165,0.1); }
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(124,110,245,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124,110,245,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+.float { animation: float 5s ease-in-out infinite; }
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+.pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink { 50% { border-color: transparent; } }
+
+.nav-blur {
+  background: rgba(7,7,16,0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(124,110,245,0.1);
+}
