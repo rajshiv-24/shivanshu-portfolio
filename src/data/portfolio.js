@@ -75,8 +75,8 @@ export const projects = [
     ],
     stack: ['Angular', 'Spring Boot', 'PostgreSQL', 'JWT'],
     accent: '#ef9f27',
-    github: 'https://github.com/rajshiv-24/DigitalGoldWallet.git',
-    live: null,
+    github: 'https://github.com/rajshiv-24/DigitalGoldWallet_Frontend.git',
+    live: 'https://digital-gold-wallet-frontend.vercel.app/',
     category: 'Fintech',
   },
 ];
