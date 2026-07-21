@@ -140,7 +140,7 @@ export default function Hero() {
               View Projects <ArrowRight size={16} />
             </motion.button>
             <motion.a
-              href="/Shivanshu_Resume_Final.pdf"
+              href="/Shivanshu-Resume-Final.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
